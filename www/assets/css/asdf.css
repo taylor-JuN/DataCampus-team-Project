@@ -1,0 +1,108 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+
+
+.main-head{
+    height: 150px;
+    background: #FFF;
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #164068;
+    overflow-x: hidden;
+    padding-top: 5%;
+}
+
+.main {
+    padding: 0px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 30%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+
+    .login-form{
+        width: 75%;
+        margin: auto;
+    }
+}
+
+
+.login-main-text{
+    margin-top: 30%;
+    padding: 60px;
+    color: #fff;
+    max-width: 80%;
+    margin: auto;
+    margin-left: 15%;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: #000 !important;
+    color: #fff;
+}
+
+.form-group{
+    color: white;
+}
+
+.img-team{
+    max-width: 80%;
+    margin-top: 25%;
+
+}
+
+.img-comment{
+    max-width: 70%;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.control-label {
+    font-size: 130%;
+    font-weight: 300;
+}
+
+.form-control{
+    height: 40px;
+}
+
+.well{
+    background-color: #164068;
+    border-color: #164068;
+    font-size: 120%;
+}

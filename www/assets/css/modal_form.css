@@ -1,0 +1,21 @@
+
+.selBox {
+    max-width: 50%;
+}
+
+.modal-dialog{
+    margin-left: 20%;
+}
+
+.col-mod{
+      width: 20%;
+}
+
+.modal-content{
+    width: 150%;
+    margin: auto;
+}
+
+.form-group{
+    width:20%;
+}

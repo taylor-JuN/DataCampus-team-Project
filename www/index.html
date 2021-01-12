@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<title>first</title>
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<style>
+    @font-face {
+        font-family: "myBold";
+        src: url("font/경기천년제목_Bold.ttf");
+    }
+
+    @font-face {
+        font-family: "myLight";
+        src: url("font/경기천년제목_Light.ttf");
+    }
+
+    @font-face {
+        font-family: "myMedi";
+        src: url("font/경기천년제목_Medium.ttf");
+    }
+
+    body {
+        background-color: #eeefef;
+        font-family: "myLight";
+    }
+
+    h1 {
+        font-family: "myBold";
+    }
+
+    h1 {
+        font-family: "myMedi";
+    }
+
+    .wrapper123 {
+        padding: 3px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(200px, auto);
+        text-align: center;
+    }
+
+    .one {
+        background-color: white;
+        grid-column: 1;
+        grid-row: 1 / 3;
+    }
+
+    .two {
+        background-color: white;
+        grid-column: 2 / 4;
+        grid-row: 1 / 3;
+    }
+
+    .three {
+        background-color: white;
+        grid-column: 1;
+        grid-row: 3 / 5;
+    }
+
+    .four {
+        background-color: white;
+        grid-column: 2 / 4;
+        grid-row: 3 / 5;
+    }
+
+    .two-1 {
+        background-color: white;
+        width: 50%;
+        float: left;
+        height: 100%;
+    }
+
+    .two-2 {
+        background-color: white;
+        width: 50%;
+        float: right;
+        height: 100%;
+    }
+
+    .one2 {
+        background-color: white;
+        grid-column: 1;
+        grid-row: 1 / 5;
+    }
+
+    .two2 {
+        background-color: white;
+        grid-column: 2;
+        grid-row: 1 / 3;
+    }
+
+    .three2 {
+        background-color: white;
+        border-top: 10px solid red;
+        grid-column: 2;
+        grid-row: 3 / 5;
+    }
+
+    .four2 {
+        background-color: white;
+        grid-column: 3;
+        grid-row: 1 / 5;
+    }
+
+    .left {
+        grid-column: 1/1.5;
+        grid-row: 1/5;
+    }
+
+    .right {
+        grid-column: 1.5/3;
+        grid-row: 1/5;
+    }
+</style>
+
+<body class="is-preload">
+    <!-- One -->
+
+    <div
+        style="text-align : center; float:left; width : 50%; position : absolute; top : 50%; left : 25%; transform: translate(-50%, -50%);">
+        <div class="content" style="width : 100%;">
+            <div style="position : relative; text-align : center;">
+                <img style="width : 380px; height :700px;" src="images/nation.png" />
+                <div style="position : absolute; top : 50%; left : 50%; transform: translate(-50%, -50%);">
+                    <h1>전국</h1>
+                    <ul>
+                        {{btnToNation}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div
+        style="text-align : center; float:left; width : 50%; position : absolute; top : 50%; left : 75%; transform: translate(-50%, -50%);">
+        <div class="content" style="width : 100%">
+            <div style="position : relative; text-align : center;">
+                <img style="width : 380px; height :700px;" src="images/local.png" />
+                <div style="position : absolute; top : 50%; left : 50%; transform: translate(-50%, -50%);">
+                    <h1>지역별</h1>
+                    <ul>
+                        {{btnToLocal}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

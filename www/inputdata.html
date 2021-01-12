@@ -1,0 +1,156 @@
+<html>
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/style.css" />
+
+<style>
+    @font-face {
+        font-family: "myBold";
+        src: url("font/경기천년제목_Bold.ttf");
+    }
+
+    @font-face {
+        font-family: "myLight";
+        src: url("font/경기천년제목_Light.ttf");
+    }
+
+    @font-face {
+        font-family: "myMedi";
+        src: url("font/경기천년제목_Medium.ttf");
+    }
+
+    .modal-dialog {
+        width: fit-content !important;
+    }
+
+    body {
+        background-color: #eeefef;
+        font-family: "myLight";
+    }
+
+    h1 {
+        font-family: "myBold";
+        width: 100%;
+    }
+
+    h2 {
+        font-family: "myMedi";
+        width: 100%;
+    }
+
+    .wrapperData {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(200px, auto);
+        text-align: center;
+    }
+
+    .top {
+        background-color: #729ab2;
+        grid-column: 1;
+        grid-row: 1 / 5;
+        padding: 20px;
+    }
+
+    .jungle {
+        background-color: #d6d8d4;
+        grid-column: 2;
+        grid-row: 1 / 5;
+        padding: 20px;
+    }
+
+
+
+    .mid {
+        background-color: #729ab2;
+        grid-column: 3;
+        grid-row: 1 / 5;
+        padding: 20px;
+
+    }
+
+    .AD {
+        background-color: #d6d8d4;
+        grid-column: 4;
+        grid-row: 1 / 5;
+        padding: 20px;
+
+    }
+
+    .supporter {
+        background-color: #729ab2;
+        grid-column: 5;
+        grid-row: 1 / 5;
+        padding: 20px;
+
+    }
+
+    @media (min-width: 481px) {
+        .bodyInputData {
+            width: auto;
+        }
+
+        .wrapperData {
+            width: auto;
+        }
+    }
+</style>
+
+<body class="bodyInputData">
+    <div>
+        <h1>데이터 입력하기</h1>
+
+    </div>
+    <div class="wrapperData">
+        <div class="top">
+            <div>
+                <h1 style="background-color : white; border-radius: 25px;
+                ">지역</h1>
+                <div style="text-align : center">
+                    {{region}}
+                </div>
+            </div>
+        </div>
+        <div class="jungle">
+            <div>
+                <h1 style="background-color : white; border-radius: 25px;">선별진료소</h1>
+                <div style=" color : white">
+                    <div style="margin : auto; color : white;">
+                        {{clinic}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mid">
+            <div>
+                <h1 style="background-color : white; border-radius: 25px;">날짜</h1>
+                <div style=" font : white">
+                    <div style="margin : auto">
+                        {{date}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="AD">
+            <div>
+                <h1 style="background-color : white; border-radius: 25px;">검사자</h1>
+                <div style="margin : auto; color : white;">
+                    {{testedPeople}}
+                </div>
+            </div>
+        </div>
+        <div class="supporter">
+            <div>
+                <h1 style="background-color : white; border-radius: 25px;">확진자</h1>
+                <div style="margin : auto">
+                    {{positivePeople}}
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    {{dataInputBtn}}
+</body>
+
+</html>
